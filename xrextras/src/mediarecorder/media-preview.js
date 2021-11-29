@@ -118,6 +118,7 @@ const share = () => {
     files: [fileToInclude],
   }
 
+  window.dispatchEvent(new CustomEvent('mediarecorder-shareclicked'))
   navigator.share(shareObject)
 }
 

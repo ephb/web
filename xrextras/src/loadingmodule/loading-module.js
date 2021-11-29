@@ -111,6 +111,7 @@ function create() {
     if (removeRoot) {
       clearRoot()
     }
+    window.dispatchEvent(new CustomEvent('loading-loadingdone'))
   }
 
   // Fade out the loading screen and then hide it.
