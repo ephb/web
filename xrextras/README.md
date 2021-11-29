@@ -1,11 +1,13 @@
-# XR Extras
+# XR Extras (Fork)
 
 This library provides modules that extend the
 [Camera Pipeline Module framework](https://docs.8thwall.com/web/#camerapipelinemodule) in
 [8th Wall XR](https://8thwall.com/products-web.html) to handle common application needs.
 
-The library is served at
-[//cdn.8thwall.com/web/xrextras/xrextras.js](https://cdn.8thwall.com/web/xrextras/xrextras.js), or
+This fork aims to fix some inconveniences and test proposed fixes.
+
+This fork of the library is served at
+[//cdn.jsdelivr.net/gh/ephb/web/xrextras/dist/xrextras.js] (https://cdn.jsdelivr.net/gh/ephb/web/xrextras/dist/xrextras.js) or
 can be built from this repository by running
 
 ```bash
