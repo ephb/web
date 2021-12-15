@@ -218,8 +218,13 @@ function create() {
     })
 
     const cBtn = document.getElementById('open_browser_android')
+
     const link = window.location.href.replace(/^https:\/\//, '')
     cBtn.href = `intent://${link}#Intent;scheme=https;action=android.intent.action.VIEW;end;`
+	
+	const helpBtn = document.getElementById('open_help_android')
+	helpBtn.addEventListener('click', () => {
+	window.dispatchEvent(new CustomEvent('loading-module-helpclicked'))})
 
     linkOutViewAndroid_.classList.remove('hidden')
     hideLoadingScreen(false)
