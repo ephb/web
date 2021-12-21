@@ -134,7 +134,9 @@ const xrComponents = () => {
   }
 
   const opaqueBackground = {
-    schema: { remove: { default: !1 } },
+    schema: {
+      'remove': { default: false },
+    },
     init() {
         const e = this.el.object3D,
             { remove: n } = this.data,
