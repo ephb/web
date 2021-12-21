@@ -133,6 +133,21 @@ const xrComponents = () => {
     },
   }
 
+  const opaqueBackground = {
+    schema: { remove: { default: !1 } },
+    init() {
+        const e = this.el.object3D,
+            { remove: n } = this.data,
+            t = ({ rendersOpaque: t }) => {
+                e.visible = !!t != !!n;
+            };
+        XRExtras.Lifecycle.attachListener.add(t), (this.onAttach = t);
+    },
+    remove() {
+        XRExtras.Lifecycle.attachListener.delete(this.onAttach);
+    },
+  }
+
   // Recenter the scene when the screen is tapped.
   const tapRecenterComponent = {
     init() {
@@ -1385,6 +1400,7 @@ const xrComponents = () => {
     'xrextras-loading': loadingComponent,
     'xrextras-runtime-error': runtimeErrorComponent,
     'xrextras-stats': statsComponent,
+    'xrextras-opaque-background' : tapRecenterComponent,
     'xrextras-tap-recenter': tapRecenterComponent,
     'xrextras-generate-image-targets': generateImageTargetsComponent,
     'xrextras-named-image-target': namedImageTargetComponent,
