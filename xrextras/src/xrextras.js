@@ -3,7 +3,7 @@ const {AlmostThereFactory} = require('./almosttheremodule/almost-there-module.js
 const {DebugWebViewsFactory} = require('./debugwebviews/debug-web-views.js')
 const {FullWindowCanvasFactory} = require('./fullwindowcanvasmodule/full-window-canvas-module.js')
 const {LoadingFactory} = require('./loadingmodule/loading-module.js')
-const {LifecycleFactory} = require('./lifecycle/lifecycle.js')
+const {LifecycleFactory} = require('./lifecyclemodule/lifecycle.js')
 const {PauseOnBlurFactory} = require('./pauseonblurmodule/pauseonblur.js')
 const {PauseOnHiddenFactory} = require('./pauseonhiddenmodule/pauseonhidden.js')
 const {PlayCanvasFactory} = require('./playcanvas/playcanvas.js')
@@ -20,8 +20,8 @@ const XRExtras = {
   AlmostThere: AlmostThereFactory(),
   DebugWebViews: DebugWebViewsFactory(),
   FullWindowCanvas: FullWindowCanvasFactory(),
-  Loading: LoadingFactory(),
   Lifecycle: LifecycleFactory(),
+  Loading: LoadingFactory(),
   PauseOnBlur: PauseOnBlurFactory(),
   PauseOnHidden: PauseOnHiddenFactory(),
   PlayCanvas: PlayCanvasFactory(),
